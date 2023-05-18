@@ -208,6 +208,7 @@ footer .contact
   .menu-bar-after {
     position: absolute;
     left: -999em;
+
   }
   h1 {
   display: block;
@@ -235,24 +236,26 @@ footer .contact
     background-color: #eaebec;
     display: flex;
     justify-content: center;
+
   }
   .title {
     position: absolute;
     background-color: #fff;
-    height: 150px;
-    top: 5%;
-    width: 600px;
+    height: 75px;
+    top: 7.5%;
+    width: 390px;
     display: flex;
     justify-content: center;
     color: #3d535f;
     align-items: center;
     font-size: 1em;
+
   }
   .info {
     position: absolute;
     background-color: #fff;
     height: 750px;
-    width: 600px;
+    width: 390px;
     top: 19%;
   }
   .info .texte{
@@ -261,15 +264,15 @@ footer .contact
     width: 370px;
     text-align: center;
     top: 2.5%;
-    left: 18.5%;
+    left: 2.5%;
     font-size: 20px;
   }
   .info .image{
     position: absolute;
     top: 47%;
-    left: 18.5%;
-    width: 370px;
-    height: 370px;
+    left: 3.5%;
+    width: 360px;
+    height: 360px;
     display: flex;
     justify-content: right;
   }
