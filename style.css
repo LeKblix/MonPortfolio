@@ -160,7 +160,7 @@ footer button {
 }
 .linkedin-button__img {
   display: block;
-  width: 30px;
+  width: 50px;
   color: #fff;
 }
 .linkedin-button__title {
@@ -202,6 +202,9 @@ footer .contact
   left: 5%;
   width: fit-content;
   height: fit-content;
+}
+ion-icon {
+  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -297,7 +300,10 @@ footer .contact
     width: auto;
     background-color: black;
     height: 350px;
-    top: 70%;
+    top: 80%;
+  }
+  ion-icon {
+    font-size: 30px;
   }
 
 }
