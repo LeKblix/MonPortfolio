@@ -33,7 +33,7 @@ h1 {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);  
   align-items: center;
-  padding: 0 20px;
+  padding: 0 0px;
   margin: 0 auto;
   top: 65%;
   transform: translateY(-50%);
@@ -43,7 +43,7 @@ li {
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  padding: 12px 30px;
+  padding: 12px 25px;
   margin: 0 auto;
   position: relative;
   cursor: pointer;
@@ -209,12 +209,19 @@ footer .contact
     position: absolute;
     left: -999em;
   }
+  h1 {
+  display: block;
+  font-size: 3em;
+  font-weight: 900;
+  color: #3d535f;
+  width: 300px;
+}
   .title {
     position: absolute;
     background-color: #fff;
     height: 150px;
     top: 5%;
-    width: 1750px;
+    width: 600px;
     display: flex;
     justify-content: center;
     color: #3d535f;
@@ -224,7 +231,7 @@ footer .contact
   section {
     position: relative;
     width: auto;
-    height: 1050px;
+    height: 600px;
     background-color: #eaebec;
     display: flex;
     justify-content: center;
@@ -281,6 +288,13 @@ footer .contact
     outline: none;
     margin-top: 35%;
     margin-left: 10%;
+  }
+  footer {
+    position: relative;
+    width: auto;
+    background-color: black;
+    height: 350px;
+    top: 35%;
   }
 
 }
