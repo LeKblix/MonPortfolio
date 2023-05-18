@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+header {
+  position: relative;
+  background-color: #f4f6f2;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: block;
+  font-size: 4em;
+  font-weight: 900;
+  color: #3d535f;
+}
+.multiText {
+  color: #7f00ff;
+  text-transform: capitalize;
+}
+.menu-bar-after,.menu-bar-before{
+  position: absolute;
+  border-radius: 25px;
+  height: fit-content;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  top: 65%;
+  transform: translateY(-50%);
+}
+li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 30px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left:0;
+  height:100%;
+  width: 100%;
+  z-index:-1;
+  transition: .2s;
+  border-radius: 25px;
+}
+li:hover {
+  color: black;
+}
+li:hover::before {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+section {
+  position: relative;
+  width: auto;
+  height: 1050px;
+  background-color: #eaebec;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  position: absolute;
+  background-color: #fff;
+  height: 150px;
+  top: 5%;
+  width: 1750px;
+  display: flex;
+  justify-content: center;
+  color: #3d535f;
+  align-items: center;
+  font-size: 1.5em;
+}
+.title b {
+  color: #7f00ff;
+}
+.info {
+  position: absolute;
+  background-color: #fff;
+  height: 750px;
+  width: 1750px;
+  top: 19%;
+}
+
+.info .texte{
+  position: absolute;
+  width: 875px;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  top: 5%;
+  left: 2.5%;
+  font-size: 20px;
+}
+.info .texte b {
+  color: #7f00ff;
+  font-size: 1.1em;
+}
+.info .image{
+  position: absolute;
+  top: 5%;
+  right: 7.5%;
+  width: 875px;
+  height: fit-content;
+  display: flex;
+  justify-content: right;
+}
+footer {
+  position: relative;
+  width: auto;
+  background-color: black;
+  height: 350px;
+  top: -2%;
+}
+footer button {
+  position: relative;
+  border: none;
+  outline: none;
+  margin-top: 35%;
+  margin-left: 50%;
+}
+.linkedin-button__body {
+  position: relative;
+  width: 200px;
+}
+.linkedin-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  background-color: #1d9bf0;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: padding 0.4s, width 0.3s;
+}
+.linkedin-button a{
+  text-decoration: none;
+  color: #fff;
+}
+.linkedin-button__img {
+  display: block;
+  width: 30px;
+  color: #fff;
+}
+.linkedin-button__title {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  width: 0;
+  opacity: 0;
+  margin: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
+}
+.linkedin-button:hover {
+  padding: 10px 25px;
+  width: 100%;
+}
+.linkedin-button:hover .linkedin-button__title{
+  opacity: 1;
+  margin-left: 25px;
+  width: 150px;
+  visibility: visible;
+}
+footer .rea {
+  position: absolute;
+  color: #fff;
+  font-size: 1.2em;
+  width: 350px;
+  text-align: center;
+  top: 35%;
+  left: 42.5%;
+}
+footer .contact
+{
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+  top: 15%;
+  left: 5%;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-bar-after {
+    position: absolute;
+    left: -999em;
+  }
+  .title {
+    position: absolute;
+    background-color: #fff;
+    height: 150px;
+    top: 5%;
+    width: 1750px;
+    display: flex;
+    justify-content: center;
+    color: #3d535f;
+    align-items: center;
+    font-size: 1em;
+  }
+  section {
+    position: relative;
+    width: auto;
+    height: 1050px;
+    background-color: #eaebec;
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    position: absolute;
+    background-color: #fff;
+    height: 150px;
+    top: 5%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    color: #3d535f;
+    align-items: center;
+    font-size: 1em;
+  }
+  .info {
+    position: absolute;
+    background-color: #fff;
+    height: 750px;
+    width: 600px;
+    top: 19%;
+  }
+  .info .texte{
+    position: absolute;
+    background-color: #fff;
+    width: 370px;
+    text-align: center;
+    top: 2.5%;
+    left: 18.5%;
+    font-size: 20px;
+  }
+  .info .image{
+    position: absolute;
+    top: 47%;
+    left: 18.5%;
+    width: 370px;
+    height: 370px;
+    display: flex;
+    justify-content: right;
+  }
+  footer .rea {
+    position: absolute;
+    color: #fff;
+    font-size: 1.2em;
+    width: 350px;
+    text-align: center;
+    top: 50%;
+    left: 5%;
+  }
+  footer button {
+    position: relative;
+    border: none;
+    outline: none;
+    margin-top: 35%;
+    margin-left: 10%;
+  }
+
+}
+@media screen and (min-width: 601px) {
+  .menu-bar-before {
+    position: absolute;
+    left: -999em;
+  }
+}
