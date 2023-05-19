@@ -33,7 +33,7 @@ h1 {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);  
   align-items: center;
-  padding: 0 0px;
+  padding: 0 0;
   margin: 0 auto;
   top: 65%;
   transform: translateY(-50%);
@@ -48,6 +48,9 @@ li {
   position: relative;
   cursor: pointer;
   white-space: nowrap;
+}
+a {
+  text-decoration: none;
 }
 li::before {
   content: " ";
@@ -70,7 +73,7 @@ li:hover::before {
 }
 section {
   position: relative;
-  width: auto;
+  width: 100%;
   height: 1050px;
   background-color: #eaebec;
   display: flex;
@@ -81,7 +84,7 @@ section {
   background-color: #fff;
   height: 150px;
   top: 5%;
-  width: 1750px;
+  width: 1490px;
   display: flex;
   justify-content: center;
   color: #3d535f;
@@ -95,7 +98,7 @@ section {
   position: absolute;
   background-color: #fff;
   height: 750px;
-  width: 1750px;
+  width: 1490px;
   top: 19%;
 }
 
@@ -116,7 +119,7 @@ section {
 .info .image{
   position: absolute;
   top: 5%;
-  right: 7.5%;
+  right: 5%;
   width: 875px;
   height: fit-content;
   display: flex;
@@ -234,7 +237,7 @@ footer .contact
   section {
     position: relative;
     width: auto;
-    height: 600px;
+    height: 1250px;
     background-color: #eaebec;
     display: flex;
     justify-content: center;
@@ -244,7 +247,7 @@ footer .contact
     position: absolute;
     background-color: #fff;
     height: 75px;
-    top: 7.5%;
+    top: 5%;
     width: 390px;
     display: flex;
     justify-content: center;
@@ -256,9 +259,9 @@ footer .contact
   .info {
     position: absolute;
     background-color: #fff;
-    height: 750px;
+    height: 1050px;
     width: 390px;
-    top: 19%;
+    top: 10%;
   }
   .info .texte{
     position: absolute;
@@ -271,9 +274,10 @@ footer .contact
   }
   .info .image{
     position: absolute;
-    top: 90%;
+    top: 64%;
     left: 3.5%;
     width: 360px;
+
     height: 360px;
     display: flex;
     justify-content: right;
@@ -299,7 +303,7 @@ footer .contact
     width: auto;
     background-color: black;
     height: 350px;
-    top: 80%;
+    top: -5%;
   }
   .linkedin-button__img {
     display: block;
@@ -308,9 +312,13 @@ footer .contact
     font-size: 50px;
   }
 }
+
 @media screen and (min-width: 601px) {
   .menu-bar-before {
     position: absolute;
     left: -999em;
   }
 }
+
+
+
